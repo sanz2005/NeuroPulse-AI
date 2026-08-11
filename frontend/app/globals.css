@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary:    #0D1117;
+  --bg-secondary:  #161B22;
+  --bg-tertiary:   #21262D;
+  --border-color:  #30363D;
+  --text-primary:  #E6EDF3;
+  --text-secondary: #7D8590;
+  --accent-green:  #00D4AA;
+  --accent-purple: #7F77DD;
+  --accent-amber:  #F59E0B;
+  --accent-blue:   #3B82F6;
+  --accent-red:    #EF4444;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent-green); }
+
+/* Glass card */
+.glass {
+  background: rgba(22, 27, 34, 0.8);
+  backdrop-filter: blur(12px);
+  border: 0.5px solid var(--border-color);
+  border-radius: 8px;
+}
+
+/* Pulse animation */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+.pulse { animation: pulse-dot 1.5s infinite; }
+
+/* Glow effect */
+.glow-green { box-shadow: 0 0 12px rgba(0, 212, 170, 0.3); }
+.glow-red   { box-shadow: 0 0 12px rgba(239, 68, 68, 0.3); }
+
+/* Signal line animation */
+@keyframes signal-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
