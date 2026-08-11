@@ -980,9 +980,6 @@ This project is developed as a research-oriented exploration of neuromorphic com
 
 The project builds on publicly available biomedical datasets and open-source machine-learning technologies.
 
-📄 License
-
-Add an appropriate open-source license before distributing the project publicly.
 
 <p align="center">
   <strong>NeuroPulse AI — From Biosignals to Spikes to Explainable Healthcare Intelligence.</strong>
