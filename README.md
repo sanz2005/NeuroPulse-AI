@@ -308,6 +308,7 @@ The dashboard is designed to make complex SNN behavior understandable through vi
 
 📁 Project Structure
 
+```text
 NeuroPulse AI/
 │
 ├── ai/
@@ -401,6 +402,7 @@ NeuroPulse AI/
 ├── check_results.py
 ├── .gitignore
 └── README.md
+```
 
 Note: Large raw datasets, processed arrays, virtual environments, local databases, and model binaries are intentionally excluded from GitHub through .gitignore.
 
@@ -515,6 +517,7 @@ The repository contains generated research artifacts under outputs/.
 
 Visualization Categories
 
+```text
 outputs/
 ├── plots/
 │   ├── biosignal overview
@@ -543,6 +546,7 @@ outputs/
     ├── EEG SNN heatmap
     ├── EMG SNN attribution
     └── EMG SNN heatmap
+```
 
 These outputs are intended to support both model-performance evaluation and neuromorphic behavior analysis.
 
@@ -818,6 +822,7 @@ Provides a neuromorphic / visual analytics-oriented interface for interpreting s
 
 The backend is organized into modular API routes:
 
+```text
 /api/routes/
 ├── alerts
 ├── analyze
@@ -827,6 +832,7 @@ The backend is organized into modular API routes:
 ├── records
 ├── signals
 └── xai
+```
 
 This separation allows model inference, clinical information, benchmarking, alerts, and explainability to evolve independently.
 
