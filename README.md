@@ -7,12 +7,12 @@ Neuromorphic Healthcare Intelligence Platform for Multi-Modal Biosignal Monitori
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python" alt="Python">
   <img src="https://img.shields.io/badge/Spiking%20Neural%20Networks-SNN-purple" alt="SNN">
   <img src="https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi" alt="FastAPI">
   <img src="https://img.shields.io/badge/Next.js-Frontend-black?logo=next.js" alt="Next.js">
   <img src="https://img.shields.io/badge/TypeScript-Frontend-3178C6?logo=typescript" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Research-Prototype-orange" alt="Research">
+  <img src="https://img.shields.io/badge/Research-Prototype-orange" alt="Research Prototype">
 </p>
 
 📌 Overview
@@ -21,17 +21,47 @@ NeuroPulse AI is an end-to-end neuromorphic healthcare intelligence platform des
 
 The platform brings together three biosignal modalities:
 
-❤️ ECG — cardiac rhythm / arrhythmia-oriented analysis
+Modality
 
-🧠 EEG — seizure-oriented neurological anomaly analysis
+Signal
 
-💪 EMG — muscle activity and anomaly analysis
+Primary Focus
+
+❤️ ECG
+
+Electrocardiogram
+
+Cardiac anomaly / arrhythmia analysis
+
+🧠 EEG
+
+Electroencephalogram
+
+Seizure / neurological anomaly analysis
+
+💪 EMG
+
+Electromyogram
+
+Muscle activity / anomaly analysis
 
 Instead of treating biomedical signals only as conventional continuous-valued time series, NeuroPulse AI converts signals into event-based spike representations and processes them using spiking neuron models.
 
-The project combines:
+End-to-End Pipeline
 
-Biosignal Processing → Spike Encoding → SNN Inference → Explainability → Benchmarking → Visualization → Healthcare Monitoring
+Biosignal Processing
+        ↓
+Spike Encoding
+        ↓
+SNN Inference
+        ↓
+Explainability
+        ↓
+Benchmarking
+        ↓
+Visualization
+        ↓
+Healthcare Monitoring
 
 The system is implemented as a software-based neuromorphic simulation platform, making it possible to study neuromorphic intelligence without requiring dedicated neuromorphic hardware.
 
@@ -41,15 +71,15 @@ Conventional deep-learning approaches such as CNNs, LSTMs, and Transformers can 
 
 Neuromorphic computing introduces a different computational paradigm:
 
-event-driven processing
+⚡ Event-driven processing
 
-sparse spike activity
+🕸️ Sparse spike activity
 
-temporal information processing
+⏱️ Temporal information processing
 
-biologically inspired neuron dynamics
+🧠 Biologically inspired neuron dynamics
 
-potential reductions in computational activity and energy consumption
+🔋 Potential reductions in computational activity and energy consumption
 
 However, biomedical SNN research is often presented as isolated experiments for a single modality or task.
 
@@ -91,13 +121,13 @@ Each modality has dedicated preprocessing and training components.
 
 Continuous biomedical signals are transformed into spike trains before SNN processing.
 
-Implemented encoding approaches include:
+Implemented Encoding Approaches
 
-Rate Encoding
+📈 Rate Encoding
 
-Temporal Encoding
+⏱️ Temporal Encoding
 
-Delta Modulation
+⚡ Delta Modulation
 
 This enables the system to represent signal changes as temporal events rather than relying exclusively on dense continuous-valued input.
 
@@ -105,17 +135,17 @@ This enables the system to represent signal changes as temporal events rather th
 
 The SNN layer contains reusable neuron and surrogate-gradient components.
 
-Core implementations include:
+Core Implementations
 
-Leaky Integrate-and-Fire (LIF) neuron
+🧠 Leaky Integrate-and-Fire (LIF) neuron
 
-surrogate-gradient based learning
+🎯 Surrogate-gradient based learning
 
-ECG SNN
+❤️ ECG SNN
 
-EEG SNN
+🧠 EEG SNN
 
-EMG SNN
+💪 EMG SNN
 
 The modular design makes it possible to extend the system with additional neuron models and spike-processing strategies.
 
@@ -123,11 +153,11 @@ The modular design makes it possible to extend the system with additional neuron
 
 To evaluate the usefulness of the neuromorphic approach, NeuroPulse AI includes conventional baselines:
 
-CNN
+🧩 CNN
 
-LSTM
+🔁 LSTM
 
-Transformer
+🤖 Transformer
 
 The project therefore supports comparative analysis rather than evaluating the SNN in isolation.
 
@@ -137,11 +167,11 @@ The platform includes SNN-oriented explainability components for interpreting mo
 
 The XAI pipeline produces visual artifacts such as:
 
-spike attribution maps
+🧠 Spike attribution maps
 
-heatmaps
+🔥 Heatmaps
 
-modality-specific attribution visualizations
+📊 Modality-specific attribution visualizations
 
 The frontend exposes these insights through dedicated visualization panels.
 
@@ -149,43 +179,43 @@ The frontend exposes these insights through dedicated visualization panels.
 
 NeuroPulse AI includes research utilities for:
 
-model benchmarking
+📊 Model benchmarking
 
-computational complexity analysis
+🧮 Computational complexity analysis
 
-energy comparison
+🔋 Energy comparison
 
-spike sparsity analysis
+🕸️ Spike sparsity analysis
 
-training-history visualization
+📈 Training-history visualization
 
-performance comparison
+⚖️ Performance comparison
 
 The goal is not only to ask:
 
-"Which model is more accurate?"
+Which model is more accurate?
 
 but also:
 
-"How much computation and spike activity is required to achieve that performance?"
+How much computation and spike activity is required to achieve that performance?
 
 📡 7. Real-Time Healthcare Monitoring Architecture
 
 The backend provides API routes for:
 
-signal analysis
+📡 Signal analysis
 
-inference
+🧠 Inference
 
-patient records
+👤 Patient records
 
-alerts
+🚨 Alerts
 
-benchmarking
+📊 Benchmarking
 
-explainability
+🔍 Explainability
 
-signal handling
+📈 Signal handling
 
 WebSocket infrastructure is also included for real-time communication and streaming-oriented functionality.
 
@@ -193,32 +223,32 @@ WebSocket infrastructure is also included for real-time communication and stream
 
 The Next.js frontend provides dedicated interfaces for:
 
-biosignal analysis
+📈 Biosignal analysis
 
-research/benchmarking
+🧪 Research / benchmarking
 
-neural-twin style visualization
+🧠 Neural-twin style visualization
 
-clinical reasoning
+🩺 Clinical reasoning
 
-clinical priority information
+🚨 Clinical priority information
 
-decision timelines
+🕒 Decision timelines
 
-doctor-oriented summaries
+👨‍⚕️ Doctor-oriented summaries
 
-XAI visualization
+🔍 XAI visualization
 
-spike raster visualization
+🕸️ Spike raster visualization
 
-energy monitoring
+🔋 Energy monitoring
 
 The dashboard is designed to make complex SNN behavior understandable through visual analytics rather than exposing only raw prediction outputs.
 
 🏗️ System Architecture
 
                          ┌──────────────────────────┐
-                         │     NeuroPulse AI        │
+                         │       NeuroPulse AI      │
                          │ Neuromorphic Healthcare  │
                          │      Intelligence        │
                          └────────────┬─────────────┘
@@ -378,21 +408,15 @@ Note: Large raw datasets, processed arrays, virtual environments, local database
 
 The research pipeline is designed around publicly available biomedical datasets.
 
-ECG
+ECG — MIT-BIH Arrhythmia Database
 
-MIT-BIH Arrhythmia Database
+Used for ECG signal processing and cardiac anomaly / arrhythmia experiments.
 
-Used for ECG signal processing and cardiac anomaly/arrhythmia experiments.
-
-EEG
-
-CHB-MIT Scalp EEG Database
+EEG — CHB-MIT Scalp EEG Database
 
 Used for seizure-oriented EEG analysis.
 
-EMG
-
-NinaPro
+EMG — NinaPro
 
 Used for EMG-based muscle activity analysis and anomaly-oriented experiments.
 
@@ -455,31 +479,31 @@ Transformer
 
 6. Explainability
 
-The SNN output is accompanied by attribution/heatmap visualizations to investigate which temporal signal regions contributed to model decisions.
+The SNN output is accompanied by attribution / heatmap visualizations to investigate which temporal signal regions contributed to model decisions.
 
 7. Evaluation
 
 The evaluation layer generates:
 
-benchmark summaries
+📊 Benchmark summaries
 
-training histories
+📈 Training histories
 
-complexity analysis
+🧮 Complexity analysis
 
-energy comparisons
+🔋 Energy comparisons
 
-spike sparsity analysis
+🕸️ Spike sparsity analysis
 
-confusion matrices
+🧩 Confusion matrices
 
-ROC curves
+📈 ROC curves
 
-precision-recall curves
+📊 Precision-recall curves
 
-calibration plots
+🎯 Calibration plots
 
-radar comparisons
+🕸️ Radar comparisons
 
 8. Visualization
 
@@ -532,7 +556,7 @@ Convolutional Neural Network
 
 Long Short-Term Memory Network
 
-Transformer
+🤖 Transformer
 
 Neuromorphic Model
 
@@ -546,7 +570,7 @@ Purpose
 
 Predictive performance
 
-Evaluate classification/anomaly detection quality
+Evaluate classification / anomaly detection quality
 
 Training behavior
 
@@ -554,7 +578,7 @@ Compare convergence and learning curves
 
 Computational complexity
 
-Analyze model/resource requirements
+Analyze model / resource requirements
 
 Spike sparsity
 
@@ -568,13 +592,13 @@ Explainability
 
 Understand model decisions
 
-Exact experimental metrics should be reported from the generated benchmark files rather than hard-coded into this README.
+Note: Exact experimental metrics should be reported from the generated benchmark files rather than hard-coded into this README.
 
 🔍 Explainable AI
 
 A major component of NeuroPulse AI is making SNN predictions interpretable.
 
-The XAI pipeline generates:
+XAI Pipeline
 
 Signal
   ↓
@@ -598,12 +622,9 @@ Traditional neural networks process dense numerical activations.
 
 SNNs communicate information using discrete spikes and temporal dynamics.
 
-Conceptually:
-
 Traditional Neural Network
 
 Input → Dense Activations → Dense Computation → Output
-
 
 Spiking Neural Network
 
@@ -611,79 +632,53 @@ Input → Spike Encoding → Sparse Events → Neuron Dynamics → Output
 
 Potential advantages investigated by this project include:
 
-event-driven computation
+⚡ Event-driven computation
 
-temporal information representation
+⏱️ Temporal information representation
 
-sparse neural activity
+🕸️ Sparse neural activity
 
-neuromorphic compatibility
+🧠 Neuromorphic compatibility
 
-energy-aware computation
+🔋 Energy-aware computation
 
-suitability for future edge/real-time biomedical systems
+📡 Suitability for future edge / real-time biomedical systems
 
 NeuroPulse AI focuses on empirically studying these properties, rather than assuming that SNNs are automatically more efficient.
 
 🛠️ Technology Stack
 
-AI / Machine Learning
+Layer
 
-Python
+Technologies
 
-PyTorch
+AI / ML
 
-NumPy
+Python, PyTorch, NumPy, SciPy, Scikit-learn
 
-SciPy
+Neuromorphic AI
 
-Scikit-learn
-
-Spiking Neural Networks
-
-Surrogate-gradient learning
+SNNs, LIF neurons, surrogate-gradient learning
 
 Backend
 
-FastAPI
-
-Python
-
-WebSocket
-
-Database layer
+FastAPI, Python, WebSocket, database layer
 
 Frontend
 
-Next.js
+Next.js, React, TypeScript, CSS
 
-React
+Data
 
-TypeScript
+MIT-BIH, CHB-MIT, NinaPro
 
-Tailwind/CSS-based UI
+Research Outputs
 
-Interactive visualization components
-
-Data & Research
-
-MIT-BIH ECG
-
-CHB-MIT EEG
-
-NinaPro EMG
-
-NumPy arrays
-
-JSON / CSV research outputs
+NumPy, JSON, CSV, PNG
 
 Development
 
-Git
-
-GitHub
-
-VS Code
+Git, GitHub, VS Code
 
 🚀 Installation
 
@@ -696,7 +691,7 @@ Node.js 18+
 npm
 Git
 
-Clone the repository:
+Clone the Repository
 
 git clone https://github.com/sanz2005/NeuroPulse-AI.git
 cd NeuroPulse-AI
@@ -713,13 +708,11 @@ Activate it:
 
 .\venv\Scripts\Activate.ps1
 
-Install Python dependencies according to the project's dependency files.
-
-For the AI components:
+Install AI dependencies:
 
 pip install -r ai/requirements.txt
 
-If the backend has its own dependency file in your working version, install that as well.
+If the backend in your local working version has its own dependency file, install those dependencies as well.
 
 🖥️ Frontend Setup
 
@@ -758,7 +751,9 @@ ai/preprocessing/
 Contains modality-specific processing for:
 
 ECG
+
 EEG
+
 EMG
 
 Training
@@ -768,8 +763,11 @@ ai/training/
 Includes training scripts for:
 
 ECG
+
 EEG
+
 EMG
+
 ECG Transformer
 
 Evaluation
@@ -778,15 +776,15 @@ ai/evaluation/
 
 Includes:
 
-benchmarking
+📊 Benchmarking
 
-advanced evaluation
+Advanced evaluation
 
-complexity analysis
+🧮 Complexity analysis
 
-training-history plotting
+Training-history plotting
 
-benchmark generation
+Benchmark generation
 
 Explainability
 
@@ -814,7 +812,7 @@ Neural Twin
 
 /neural-twin
 
-Provides a neuromorphic/visual analytics-oriented interface for interpreting system behavior.
+Provides a neuromorphic / visual analytics-oriented interface for interpreting system behavior.
 
 🧩 API Modules
 
@@ -838,33 +836,33 @@ NeuroPulse AI is a research prototype and should not be treated as a certified m
 
 Important considerations:
 
-Public datasets are used for research.
+📚 Public datasets are used for research.
 
-Large datasets are intentionally excluded from the Git repository.
+🗂️ Large datasets are intentionally excluded from the Git repository.
 
-Local databases are excluded.
+🗄️ Local databases are excluded.
 
-Environment files and secrets are excluded through .gitignore.
+🔐 Environment files and secrets are excluded through .gitignore.
 
-Model outputs should be interpreted as research results, not clinical diagnoses.
+⚠️ Model outputs should be interpreted as research results, not clinical diagnoses.
 
 ⚠️ Current Scope
 
 The current implementation is focused on:
 
-software-based neuromorphic simulation
+🧠 Software-based neuromorphic simulation
 
-multi-modal biosignal analysis
+🧬 Multi-modal biosignal analysis
 
-SNN experimentation
+⚡ SNN experimentation
 
-baseline comparison
+⚖️ Baseline comparison
 
-explainability
+🔍 Explainability
 
-energy/complexity analysis
+🔋 Energy / complexity analysis
 
-interactive visualization
+🖥️ Interactive visualization
 
 It does not claim hardware-level neuromorphic execution.
 
@@ -872,47 +870,45 @@ Future deployment on specialized neuromorphic hardware can be explored as an ext
 
 🔮 Future Work
 
-Potential extensions include:
-
 🧠 Advanced Neuromorphic Models
 
 SNN-Transformer hybrids
 
-adaptive neuron models
+Adaptive neuron models
 
-recurrent SNN architectures
+Recurrent SNN architectures
 
-attention mechanisms for spike sequences
+Attention mechanisms for spike sequences
 
 ⚡ Hardware Deployment
 
-Intel Loihi
+🔬 Intel Loihi
 
-SpiNNaker
+🧠 SpiNNaker
 
-BrainScaleS
+⚙️ BrainScaleS
 
-FPGA-based neuromorphic acceleration
+⚡ FPGA-based neuromorphic acceleration
 
 📡 Edge Healthcare
 
-wearable biosignal monitoring
+⌚ Wearable biosignal monitoring
 
-low-power edge inference
+⚡ Low-power edge inference
 
-continuous ECG/EEG/EMG streaming
+📡 Continuous ECG / EEG / EMG streaming
 
-on-device anomaly detection
+🚨 On-device anomaly detection
 
 🔬 Advanced Explainability
 
-temporal spike attribution
+🕒 Temporal spike attribution
 
-neuron-level explanations
+🧠 Neuron-level explanations
 
-counterfactual explanations
+🔍 Counterfactual explanations
 
-modality-level explanation fusion
+🧬 Modality-level explanation fusion
 
 🌐 Multi-Modal Fusion
 
@@ -926,7 +922,7 @@ Unified multi-modal SNN pipeline for ECG, EEG, and EMG biomedical signals.
 
 Multiple spike encoding strategies for converting continuous biosignals into event-based representations.
 
-Comparative benchmarking between SNNs and conventional CNN/LSTM/Transformer architectures.
+Comparative benchmarking between SNNs and conventional CNN / LSTM / Transformer architectures.
 
 Explainable SNN analysis using spike attribution and signal heatmaps.
 
@@ -942,29 +938,29 @@ Status: 🚧 Research Prototype / Active Development
 
 The core project structure includes:
 
-Multi-modal preprocessing
+🧬 Multi-modal preprocessing
 
-Spike encoding
+⚡ Spike encoding
 
-ECG/EEG/EMG SNN models
+🧠 ECG / EEG / EMG SNN models
 
-CNN/LSTM/Transformer baselines
+🧩 CNN / LSTM / Transformer baselines
 
-Training pipelines
+🏋️ Training pipelines
 
-Benchmarking
+📊 Benchmarking
 
-Complexity analysis
+🧮 Complexity analysis
 
-XAI
+🔍 XAI
 
-FastAPI backend
+⚙️ FastAPI backend
 
-WebSocket infrastructure
+📡 WebSocket infrastructure
 
-Next.js research dashboard
+🖥️ Next.js research dashboard
 
-Visualization outputs
+📈 Visualization outputs
 
 👩‍💻 Author
 
@@ -976,10 +972,19 @@ GitHub: @sanz2005
 
 ⭐ Acknowledgement
 
-This project is developed as a research-oriented exploration of neuromorphic computing, Spiking Neural Networks, biomedical signal processing, explainable AI, and energy-aware machine learning.
+This project is developed as a research-oriented exploration of:
+
+Neuromorphic computing
+
+Spiking Neural Networks
+
+Biomedical signal processing
+
+Explainable AI
+
+Energy-aware machine learning
 
 The project builds on publicly available biomedical datasets and open-source machine-learning technologies.
-
 
 <p align="center">
   <strong>NeuroPulse AI — From Biosignals to Spikes to Explainable Healthcare Intelligence.</strong>
