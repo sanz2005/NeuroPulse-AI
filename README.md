@@ -71,7 +71,7 @@ The system is implemented as a software-based neuromorphic simulation platform, 
 
 A walkthrough of the NeuroPulse AI platform demonstrating ECG signal analysis, SNN-based arrhythmia detection, spike activity visualization, and explainable AI.
 
-https://drive.google.com/drive/home
+[https://drive.google.com/drive/home](https://drive.google.com/file/d/1sNBoWJCx-qha-bJ6j0_ajpinEHKGN82P/view?usp=sharing)
 
 🎯 **Research Motivation**
 
