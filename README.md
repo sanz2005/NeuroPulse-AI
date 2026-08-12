@@ -65,6 +65,14 @@ Healthcare Monitoring
 
 The system is implemented as a software-based neuromorphic simulation platform, making it possible to study neuromorphic intelligence without requiring dedicated neuromorphic hardware.
 
+🎥 **Project Demo**
+
+### ❤️ ECG Arrhythmia Analysis
+
+A walkthrough of the NeuroPulse AI platform demonstrating ECG signal analysis, SNN-based arrhythmia detection, spike activity visualization, and explainable AI.
+
+https://drive.google.com/drive/home
+
 🎯 **Research Motivation**
 
 Conventional deep-learning approaches such as CNNs, LSTMs, and Transformers can provide strong performance on biomedical signals, but they generally operate on dense numerical representations.
